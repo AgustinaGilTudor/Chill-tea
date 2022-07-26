@@ -1,0 +1,1483 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap');
+@import "variables";
+
+ *{
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (max-width: 576px) {
+       
+        .header{
+            &__nav--secciones{
+                display: grid;
+                grid-template-columns: 100%;
+                justify-content: center;
+                align-items: center;
+                list-style-type:none;
+                background-color: $color-primary;
+                padding: 1rem 0;
+            }
+            &__link{
+                font-family: 'Lora', serif;
+                text-transform: uppercase;
+                color:$color-tertiary;
+                font-weight:bold;
+                text-decoration: none;
+                padding: 1rem;
+                    &:hover{
+                    color:$color-secondary;
+                    }
+            }  
+        }
+        .principal{
+            width:auto;
+            margin:0;
+            padding: 1rem;
+            &__index{
+                background-image:url(../assets/te_blend_bg.jpg);
+                background-size:cover;
+                background-repeat: no-repeat;
+                color:white;
+                font-size: 2rem;
+                padding: 7rem 0rem;
+            }
+            &__sobreNosotros{
+                color:$color-tertiary;
+                font-size: 1.5rem;
+                height: 50%;
+            }
+            &__contacto{
+                padding-left: 10%;
+            } 
+            &__titulo{
+                margin-bottom:1rem;
+                font-family: 'Lora', serif;
+                text-transform: uppercase;
+                text-align:left;
+                padding-left: 1rem;
+            }   
+            &__titulo--sobreNosotros{
+                margin-bottom:2rem;
+                font-family: 'Lora', serif;
+                text-transform: uppercase;
+                text-align:left;
+            }  
+            &__contacto--titulo{
+                font-family: 'Lora', serif;
+                font-size: 2rem;
+                text-transform: uppercase;
+                padding: 2rem 0;
+            }  
+            &__texto{
+                padding: 2rem 0;
+                font-family: 'Roboto', sans-serif;
+            }  
+            &__texto--index{
+                padding-left:1rem;
+                font-size: 1.5rem;
+            }  
+            &__texto--sobreNosotros{
+                color:$color-tertiary;
+                width: 80vw;
+                font-size: 1.3rem;
+            } 
+            &__texto--blends{
+                color:$color-tertiary;
+                width: 80vw;
+                font-size: 1.5rem;
+            }   
+            &__contacto--texto{
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.5rem;
+                font-weight: 400;
+                color:$color-tertiary;
+            }  
+            &__boton--blends{
+                background-color: $color-primary;
+                border: none;
+            }  
+            &__boton--tienda{
+                background-color: $color-primary;
+                border: none;
+            }
+            &__botonLink--index{
+                width: 3.5rem;
+                height: 1rem;
+                padding: 1rem;
+                color: $color-tertiary;
+                background-color: $color-primary;
+                font-family: 'Lora', serif;
+                font-weight: bold;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                text-decoration: none;
+            } 
+            &__botonLink--blends{
+                width: 5rem;
+                height: 2rem;
+                color: white;
+                background-color: $color-secondary;
+                font-family: 'Lora', serif;
+                font-weight: bold;
+                font-size: 1rem;
+                padding: 1rem;
+                text-decoration: none;
+            }  
+            &__botonLink--tienda{
+                width: 5rem;
+                height: 2rem;
+                color:$color-tertiary;
+                background-color: $color-secondary;
+                font-family: 'Lora', serif;
+                font-weight: bold;
+                font-size: 1rem;
+                padding-bottom: 0.5rem;
+                margin-bottom: 2rem;
+                text-decoration: none;
+            }     
+            &__botonLink--tienda{
+                width: 5rem;
+                height: 2rem;
+                color: white;
+                background-color: $color-secondary;
+                font-family: 'Lora', serif;
+                font-weight: bold;
+                font-size: 1rem;
+                padding: 1rem;
+                text-decoration: none;
+            }  
+        }
+        .btn__ppal{
+        font-size: 2rem;
+        border: none;
+        margin-left:1rem;
+        }
+        .card{
+        margin: 3rem 3rem;
+        background-color: $color-primary;
+        border-radius: 0;
+        &-blends{
+            margin: 2rem 0;
+        }
+        }
+        .secundario{
+            margin-left: 1rem;
+            margin-bottom: 4rem;
+            &__titulo{
+                font-family: 'Lora', serif;
+                text-transform: uppercase;
+                text-align:left;
+
+                &--index{
+                width: 100%;
+                font-size: 2rem;
+                margin-top: 2rem;
+                }
+                &--sobreNosotros{
+                font-size: 1rem;
+                padding: 1rem 0;
+                padding-right: 1rem;
+                padding-left:3rem;
+                }
+                &--blends{
+                font-size: 1rem;
+                width: 100%;
+                }
+            }
+            &__contenedor--index{
+                padding-right: 3.5rem;
+            }  
+            &__texto{
+                font-family: 'Roboto', sans-serif;
+            }  
+            &__texto--index{
+                padding-top: 2rem;
+                font-size: 1.2rem;
+            }     
+            &__texto--sobreNosotros{
+                font-size: 1.3rem;
+                padding-left: 0.5rem;
+                color:$color-tertiary;
+                font-family: 'Roboto', sans-serif;
+            }
+            &__texto--blends{
+                margin-bottom: 2rem;
+            }  
+            &__index--img{
+                width: 0;
+                }
+            &__img--sobreNosotros{
+                margin-right: 1rem;
+            }    
+            &__autores figcaption{
+                padding-left: 4rem;
+            }
+            &__tienda{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                /* margin: 1rem 5rem; */
+            }  
+            &__columna1{
+                display:flex;
+                flex-direction: column;
+                padding: 2rem;
+                background-color: $color-primary;
+                
+                &figcaption{
+                    padding: 0.5rem 0;
+                    font-family: 'Lora', serif;
+                    text-transform: uppercase;
+                    font-weight: bold;    
+                }
+                &h3{
+                    font-family: 'Lora', serif;
+                    margin-bottom:2rem;
+                }
+                &--sobreNosotros{
+                    font-family: 'Lora', serif;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                &figcaption{
+                    text-align: start;
+                    padding-left: 4rem;
+                }  
+            }
+            &__columna2{
+                width:90%;
+                display:flex;
+                flex-direction: column;
+                padding: 2rem;
+                align-items: flex-start;
+                justify-content: space-evenly;
+            }   
+        &__contenedor{
+                &--blends{
+                width:83%;
+                background-color:$color-primary;
+                display:grid;
+                grid-template-columns: 30% 65%;
+                margin-bottom:2rem;
+                }
+                &--sobreNosotros{
+                    width:100%;
+                    display:grid;
+                    grid-template-columns:100%;
+                    margin-bottom:2rem;
+                    justify-items: center;
+                } 
+                &--tienda{
+                    width:22%;
+                    background-color:$color-primary;
+                    margin: 2rem;
+                    display:grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: 70% 10% 10% 10%;
+                    align-content: center;
+                }  
+            }
+        }    
+        .formulario{
+            width: 100%;
+            display:grid;
+            justify-content: center;
+            grid-template-columns: 80%;
+            margin: 3rem 0;
+                &__boton{
+                    background-color:$color-tertiary;
+                    color:  white;
+                    border:none;
+                    /* height:3rem; */
+                    font-family: 'Lora', serif;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    }
+                &input{
+                padding: 1rem 0.5rem;
+                margin-top: 0.5rem;
+                }
+                &__campo{
+                display:flex;
+                flex-direction:column;
+                padding: 1rem 0;
+                font-family: 'Lora', serif;
+                }
+                &__fila1{
+                display:grid;
+                grid-template-columns: 100%;
+                }
+                &__nombre{
+                display:flex;
+                flex-direction:column;
+                padding: 0.5rem 0;
+                }
+        }
+    }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+
+    .header{
+        &__nav--secciones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type:none;
+        background-color: $color-primary;
+        padding: 1rem 0;
+        }
+        &__link{
+            font-family: 'Lora', serif;
+            text-transform: uppercase;
+            color:$color-tertiary;
+            font-weight:bold;
+            text-decoration: none;
+            padding: 1rem;
+                &:hover{
+                    color:$color-secondary;   
+                }
+        }
+    } 
+    .principal{
+      width:auto;
+      height:100vh;
+      margin:0;
+      padding: 1rem;
+        &__index{
+            background-image:url(../assets/te_blend.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            color:white;
+            font-size: 2rem;
+            padding: 3rem 0rem;
+        }
+        &__sobreNosotros{
+            color:$color-tertiary;
+            font-size: 1.5rem;
+            padding-left: 5rem;
+            height: 50%;
+        }
+        &__contacto{
+            padding-left: 10%;
+        } 
+        &__contacto--titulo{
+            font-family: 'Lora', serif;
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding: 2rem 0;
+        }     
+        &__titulo{
+            width: 100%;
+            padding-left:5rem;
+            margin-bottom:2rem;
+            font-family: 'Lora', serif;
+            font-size: 3rem;
+            text-transform: uppercase;
+            text-align:left;
+                &--sobreNosotros{
+                    margin-bottom:2rem;
+                    font-family: 'Lora', serif;
+                    text-transform: uppercase;
+                    text-align:left;
+                }
+        }    
+        &contacto--titulo{
+            font-family: 'Lora', serif;
+            font-weight: bold;
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding: 2rem 0;
+        }
+        &__texto{
+            padding: 2rem 0;
+            font-family: 'Roboto', sans-serif;
+                &--index{
+                    width: 80%;
+                    padding-left:5rem;
+                    font-size: 2rem;
+                }  
+                &--sobreNosotros{
+                    color:$color-tertiary;
+                    width: 80vw;
+                    font-size: 1.3rem;
+                  }
+                &--blends{
+                    color:$color-tertiary;
+                    width: 80vw;
+                    font-size: 1.5rem;
+                  }    
+        }   
+        &__contacto--texto{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color:$color-tertiary;
+        }
+        &__boton{
+            &--blends{
+                background-color: $color-primary;
+                border: none;
+            }    
+            &--tienda{
+                background-color: $color-primary;
+                border: none;
+            }
+        }    
+        &__botonLink{
+            &--index{
+            width: 3.5rem;
+            height: 1rem;
+            padding: 1rem;
+            color:$color-tertiary;
+            background-color: $color-primary;
+            font-family: 'Lora', serif;
+            font-weight: bold;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            text-decoration: none;
+          }
+        &--blends{
+            width: 5rem;
+            height: 2rem;
+            color: white;
+            background-color: $color-secondary;
+            font-family: 'Lora', serif;
+            font-weight: bold;
+            font-size: 1rem;
+            padding: 1rem;
+            text-decoration: none;
+          }  
+        &--tienda{
+            width: 5rem;
+            height: 2rem;
+            color:$color-tertiary;
+            background-color: $color-secondary;
+            font-family: 'Lora', serif;
+            font-weight: bold;
+            font-size: 1rem;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            text-decoration: none;
+          }
+        }
+ 
+    }
+    .btn__ppal{
+      font-size: 2rem;
+      border: none;
+      margin-left:5rem;
+    }
+    .card{
+      margin: 5rem 5rem;
+      background-color: $color-primary;
+      border-radius: 0;
+      }
+    .secundario{
+      margin-left: 5rem;
+      margin-bottom: 4rem;
+        &_tienda{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        &__titulo{
+            font-family: 'Lora', serif;
+            text-transform: uppercase;
+            text-align:left;
+                &--index{
+                    width: 100%;
+                    font-size: 2rem;
+                    margin-top: 4rem;
+                  }
+                &--sobreNosotros{
+                    font-size: 1rem;
+                    padding: 1rem 0;
+                    padding-right: 1rem;
+                    padding-left:3rem;
+                  }  
+                &--blends{
+                    font-size: 1rem;
+                    width: 100%;
+                  }  
+           }
+        &__contenedor--index{
+            padding-right: 3.5rem;
+          }
+        &__texto{
+            font-family: 'Roboto', sans-serif;
+                &--index{
+                    padding-right:3rem;
+                    padding-top: 5rem;
+                    font-size: 1.2rem;
+                  }
+                &--sobreNosotros{
+                    font-size: 1.3rem;
+                    padding-left: 0.5rem;
+                    color:$color-tertiary;
+                    font-family: 'Roboto', sans-serif;
+                  }
+                &--blends{
+                    margin-bottom: 2rem;
+                  }
+                  
+          }       
+        &__index--img{
+            width: 0;
+          }  
+        &__img--sobreNosotros{
+            margin-right: 1rem;
+          } 
+        &__autores{ 
+                &figcaption{
+                padding-left: 4rem;
+                }   
+          }
+        &__columna1{
+            display:flex;
+            flex-direction: column;
+            padding: 2rem;
+            background-color: $color-primary;
+            &figcaption{
+                padding: 0.5rem 0;
+                font-family: 'Lora', serif;
+                text-transform: uppercase;
+                font-weight: bold;
+              }
+            &h3{
+                font-family: 'Lora', serif;
+                margin-bottom:2rem;
+              }  
+        
+        } 
+        &--sobreNosotros{
+            font-family: 'Lora', serif;
+            text-transform: uppercase;
+            font-weight: bold;
+                &figcaption{
+                    text-align: start;
+                    padding-left: 4rem;
+                  }
+          }
+        &__columna2{
+            width:90%;
+            display:flex;
+            flex-direction: column;
+            padding: 2rem;
+            align-items: flex-start;
+            justify-content: space-evenly;
+          }  
+        &__contenedor{
+                &--blends{
+                    width:83%;
+                    background-color:$color-primary;
+                    display:grid;
+                    grid-template-columns: 30% 65%;
+                    margin-bottom:2rem;
+                    }  
+                &--sobreNosotros{
+                    width:100%;
+                    display:grid;
+                    grid-template-columns:100%;
+                    margin-bottom:2rem;
+                    justify-items: center;
+                    }
+                &--tienda{
+                    width:22%;
+                    background-color: $color-primary;
+                    margin: 2rem;
+                    display:grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: 70% 10% 10% 10%;
+                    align-content: center;
+                  }    
+        }  
+    }
+    .formulario{
+      width: 100%;
+      display:grid;
+      justify-content: center;
+      grid-template-columns: 80%;
+      margin: 3rem 0;
+        &input{
+            padding: 1rem 0.5rem;
+            margin-top: 0.5rem;
+          }
+        &__campo{
+            display:flex;
+            flex-direction:column;
+            padding: 1rem 0;
+            font-family: 'Lora', serif;
+          }  
+        &__fila1{
+            display:grid;
+            grid-template-columns: 47.5%  47.5%;
+            column-gap: 5%;
+          }  
+        &__nombre{
+            display:flex;
+            flex-direction:column;
+            padding: 0.5rem 0;
+            }  
+        &__boton{
+            background-color:$color-tertiary;
+            color:  white;
+            border:none;
+            height:3rem;
+            font-family: 'Lora', serif;
+            font-size: 1rem;
+            text-transform: uppercase;
+          }    
+    }
+    
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+    .principal{
+      width:auto;
+      height:100vh;
+      margin:0;
+      padding: 1rem;
+        &__index{
+            background-image:url(../assets/te_blend.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            color:white;
+            font-size: 2rem;
+            padding: 7rem 0rem;
+          }
+        &__sobreNosotros{
+            color:$color-tertiary;
+            font-size: 1.5rem;
+            padding-left: 5rem;
+            height: 50%;
+          }  
+        &__contacto{
+            padding-left: 10%;
+          }  
+        &__titulo{
+            // padding-left:5rem;
+            margin-bottom:2rem;
+            font-family: 'Lora', serif;
+            text-transform: uppercase;
+            text-align:left;
+                &--sobreNosotros{
+                    margin-bottom:2rem;
+                    font-family: 'Lora', serif;
+                    text-transform: uppercase;
+                    text-align:left;
+                  }
+        }  
+        &__contacto{
+                &--titulo{
+                    font-family: 'Lora', serif;
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    padding: 2rem 0;
+                }
+                &--texto{
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    color:$color-tertiary;
+                }
+        }
+        &__texto{
+                padding: 2rem 0;
+                font-family: 'Roboto', sans-serif;
+                &--index{
+                    padding-left:5rem;
+                    font-size: 2rem;
+                }
+                &--sobreNosotros{
+                    color:$color-tertiary;
+                    width: 80vw;
+                    font-size: 1.3rem;
+                }  
+                &--blends{
+                    color:$color-tertiary;
+                    width: 80vw;
+                    font-size: 1.5rem;
+                }
+        }
+        &boton{
+        &--blends{
+            background-color:$color-primary;
+            border: none;
+          }
+        &--tienda{
+            background-color: $color-primary;
+            border: none;
+          }  
+        }
+        &__botonLink{
+            &--index{
+                width: 3.5rem;
+                height: 1rem;
+                padding: 1rem;
+                color:$color-tertiary;
+                background-color:$color-primary;
+                font-family: 'Lora', serif;
+                font-weight: bold;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                text-decoration: none;
+                }
+            &--blends{
+                width: 5rem;
+                height: 2rem;
+                color: white;
+                background-color: $color-secondary;
+                font-family: 'Lora', serif;
+                font-weight: bold;
+                font-size: 1rem;
+                padding: 1rem;
+                text-decoration: none;
+              }    
+            }
+            &--tienda{
+                width: 5rem;
+                height: 2rem;
+                color: $color-tertiary;
+                background-color: $color-secondary;
+                font-family: 'Lora', serif;
+                font-weight: bold;
+                font-size: 1rem;
+                padding-bottom: 0.5rem;
+                margin-bottom: 2rem;
+                text-decoration: none;
+              }
+    }
+    .btn__ppal{
+      font-size: 2rem;
+      border: none;
+     margin-left:5rem;
+    }
+    .header{
+    &__nav--secciones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type:none;
+        background-color: $color-primary;
+        padding: 1rem 0;
+        }
+    &__link{
+        font-family: 'Lora', serif;
+        text-transform: uppercase;
+        color:$color-tertiary;
+        font-weight:bold;
+        text-decoration: none;
+        padding: 1rem;
+            &:hover{
+                color:$color-secondary;  
+            }
+        }
+ }
+    .card{
+      margin: 5rem 5rem;
+      background-color: $color-primary;
+      border-radius: 0;
+      }  
+
+    .secundario{
+      margin-left: 5rem;
+      margin-bottom: 4rem;
+        &__tienda{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+          }
+        &__titulo{
+            font-family: 'Lora', serif;
+            text-transform: uppercase;
+            text-align:left;
+            &--index{
+                width: 100%;
+                font-size: 2rem;
+                margin-top: 4rem;
+              }
+            &--sobreNosotros{
+                font-size: 1rem;
+                padding: 1rem 0;
+                padding-right: 1rem;
+                padding-left:3rem;
+            } 
+            &--blends{
+                font-size: 1rem;
+                width: 100%;
+              }              
+        } 
+        &__contenedor--index{
+            display: grid;
+            grid-template-columns: 50% 45%;
+        } 
+        &__texto{
+            font-family: 'Roboto', sans-serif;
+        &--index{
+            padding-right:3rem;
+            padding-top: 5rem;
+            font-size: 1.2rem;
+          }
+        &--sobreNosotros{
+            font-size: 1.3rem;
+            padding-left: 0.5rem;
+            color:$color-tertiary;
+            font-family: 'Roboto', sans-serif;
+          }
+          &--blends{
+            margin-bottom: 2rem;
+          }
+        }
+        &__index--img{
+            width: 100%;
+        }  
+        &__img--sobreNosotros{
+            margin-right: 1rem;
+        }
+        &__autores{
+            &figcaption{
+            padding-left: 4rem;
+            }
+        }
+        &__columna1{
+            display:flex;
+            flex-direction: column;
+            padding: 2rem;
+            background-color: $color-primary;
+            &figcaption{
+                padding: 0.5rem 0;
+                font-family: 'Lora', serif;
+                text-transform: uppercase;
+                font-weight: bold;
+            } 
+            &h3{
+                font-family: 'Lora', serif;
+                margin-bottom:2rem;
+            }  
+            &--sobreNosotros{
+                font-family: 'Lora', serif;
+                text-transform: uppercase;
+                font-weight: bold;
+                    &figcaption{
+                        text-align: start;
+                        padding-left: 4rem;
+                    }
+            } 
+        }
+        &__columna2{
+            width:90%;
+            display:flex;
+            flex-direction: column;
+            padding: 2rem;
+            align-items: flex-start;
+            justify-content: space-evenly;
+          }
+        &__contenedor{
+            &--blends{
+                width:83%;
+                background-color:$color-primary;
+                display:grid;
+                grid-template-columns: 30% 65%;
+                margin-bottom:2rem;
+            }
+            &--sobreNosotros{
+                width:100%;
+                display:grid;
+                grid-template-columns: 30% 70%;
+                margin-bottom:2rem;
+            }
+            &--tienda{
+                width:22%;
+                background-color:$color-primary;
+                margin: 2rem;
+                display:grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 70% 10% 10% 10%;
+                align-content: center;
+            }
+        }  
+    }
+    .formulario{
+      width: 100%;
+      display:grid;
+      justify-content: center;
+      grid-template-columns: 80%;
+      margin: 3rem 0;
+    &input{
+        padding: 1rem 0.5rem;
+        margin-top: 0.5rem;
+      }
+    &__campo{
+        display:flex;
+        flex-direction:column;
+        padding: 1rem 0;
+        font-family: 'Lora', serif;
+      }
+    &__fila1{
+        display:grid;
+        grid-template-columns: 47.5%  47.5%;
+        column-gap: 5%;
+      }  
+    &__nombre{
+        display:flex;
+        flex-direction:column;
+        padding: 0.5rem 0;
+      }  
+    &__boton{
+        background-color:$color-tertiary;
+        color:  white;
+        border:none;
+        height:3rem;
+        font-family: 'Lora', serif;
+        font-size: 1rem;
+        text-transform: uppercase;
+      }  
+    }
+
+  }
+  @media(min-width: 993px){
+    .header{
+    &__nav--secciones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type:none;
+        background-color:$color-primary;
+        padding: 1rem 0;
+      }
+    &__link{
+        font-family: 'Lora', serif;
+        text-transform: uppercase;
+        color:$color-tertiary;
+        font-weight:bold;
+        text-decoration: none;
+        padding: 1rem;
+            &:hover{
+                color:$color-secondary;   
+            }
+        }
+    }
+    .principal{
+      width:auto;
+      height:100vh;
+      margin:0;
+      padding: 1rem;
+    &__index{
+        background-image:url(../assets/te_blend.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        color:white;
+        font-size: 2rem;
+        padding: 7rem 0rem;
+      }
+    &__sobreNosotros{
+        color:$color-tertiary;
+        font-size: 1.5rem;
+        padding-left: 5rem;
+        height: 50%;
+      }
+    &__contacto{
+        padding-left: 10%;
+      }  
+    &__titulo{
+        margin-bottom:2rem;
+        font-family: 'Lora', serif;
+        text-transform: uppercase;
+        text-align:left;
+        &--index{
+            padding-left:5rem;
+          }
+        &--sobreNosotros{
+            margin-bottom:2rem;
+            font-family: 'Lora', serif;
+            text-transform: uppercase;
+            text-align:left;
+          } 
+        }  
+        &__contacto{
+        &--titulo{
+            font-family: 'Lora', serif;
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding: 2rem 0;
+        }
+        &--texto{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color:$color-tertiary;
+        }
+    }
+        &__texto{
+            padding: 2rem 0;
+            font-family: 'Roboto', sans-serif;
+        &--index{
+            padding-right: 10%; 
+            padding-left:5rem;
+            font-size: 2rem;
+          }
+        &--sobreNosotros{
+            color:$color-tertiary;
+            width: 80vw;
+            font-size: 1.3rem;
+          }  
+        &--blends{
+            color:$color-tertiary;
+            width: 80vw;
+            font-size: 1.5rem;
+          }
+        }
+        &boton{
+            &--blends{
+                background-color: $color-primary;
+                border: none;
+              }
+            &--tienda{
+                background-color: $color-primary;
+                border: none;
+              }  
+        }
+        &botonLink{
+            &--index{
+                width: 3.5rem;
+                height: 1rem;
+                padding: 1rem;
+                color: $color-tertiary;
+                background-color:$color-primary;
+                font-family: 'Lora', serif;
+                font-weight: bold;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                text-decoration: none;
+              }
+            &--blends{
+                width: 5rem;
+                height: 2rem;
+                color: white;
+                background-color: $color-primary;
+                font-family: 'Lora', serif;
+                font-weight: bold;
+                font-size: 1rem;
+                padding: 1rem;
+                text-decoration: none;
+              }
+            &--tienda{
+                width: 5rem;
+                height: 2rem;
+                color: $color-tertiary;
+                background-color: $color-secondary ;
+                font-family: 'Lora', serif;
+                font-weight: bold;
+                font-size: 1rem;
+                padding-bottom: 0.5rem;
+                margin-bottom: 2rem;
+                text-decoration: none;
+                }  
+        }
+    }
+    .btn__ppal{
+      font-size: 2rem;
+      border: none;
+      margin-left:5rem;
+    }
+    .card{
+      margin: 2rem 5rem;
+      background-color: $color-primary;
+      border-radius: 0;
+      }
+    }
+      @media(min-width: 993px){
+        .header{
+            &__nav--secciones{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              list-style-type:none;
+              background-color: $color-primary;
+              padding: 1rem 0;
+            }
+            &__link{
+              font-family: 'Lora', serif;
+              text-transform: uppercase;
+              color:$color-tertiary;
+              font-weight:bold;
+              text-decoration: none;
+              padding: 1rem;
+                &:hover{
+                    color:$color-secondary;
+                }
+            }
+        }
+        .principal{
+          width:auto;
+          height:100vh;
+          margin:0;
+          padding: 1rem;
+          &__index{
+                background-image:url(../assets/te_blend.jpg);
+                background-size:cover;
+                background-repeat: no-repeat;
+                color:white;
+                font-size: 2rem;
+                padding: 7rem 0rem;
+          }
+          &__sobreNosotros{
+            color:$color-tertiary;
+            font-size: 1.5rem;
+            padding-left: 5rem;
+            height: 50%;
+          }
+          &__contacto{
+            padding-left: 10%;
+          }
+          &__titulo{
+            margin-bottom:2rem;
+            font-family: 'Lora', serif;
+            text-transform: uppercase;
+            text-align:left;
+                &--index{
+                    padding-left:5rem;
+                }
+                &--sobreNosotros{
+                    margin-bottom:2rem;
+                    font-family: 'Lora', serif;
+                    text-transform: uppercase;
+                    text-align:left;
+                  }
+          }
+          &__contacto--titulo{
+            font-family: 'Lora', serif;
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding: 2rem 0;
+          }
+          &__texto{
+            padding: 2rem 0;
+            font-family: 'Roboto', sans-serif;
+                &--index{
+                    padding-right: 10%; 
+                    padding-left:5rem;
+                    font-size: 2rem;
+                }  
+                &--sobreNosotros{
+                    color:$color-tertiary;
+                    width: 80vw;
+                    font-size: 1.3rem;
+                }
+                &--blends{
+                    color:$color-tertiary;
+                    width: 80vw;
+                    font-size: 1.5rem;
+                  }
+        }
+        &__contacto--texto{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color:$color-tertiary;
+          }
+        &__boton{
+            &--blends{
+                background-color: $color-primary;
+                border: none;
+              }
+            &--tienda{
+                background-color: $color-primary;
+                border: none;
+              }  
+        }
+        &__botonLink{
+            &--index{
+                width: 3.5rem;
+                height: 1rem;
+                padding: 1rem;
+                color:$color-tertiary;
+                background-color: $color-primary;
+                font-family: 'Lora', serif;
+                font-weight: bold;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                text-decoration: none;
+              }
+            &--blends{
+                width: 5rem;
+                height: 2rem;
+                color: white;
+                background-color: $color-secondary;
+                font-family: 'Lora', serif;
+                font-weight: bold;
+                font-size: 1rem;
+                padding: 1rem;
+                text-decoration: none;
+              }  
+            &--tienda{
+                width: 5rem;
+                height: 2rem;
+                color:$color-tertiary;
+                background-color: $color-secondary;
+                font-family: 'Lora', serif;
+                font-weight: bold;
+                font-size: 1rem;
+                padding-bottom: 0.5rem;
+                margin-bottom: 2rem;
+                text-decoration: none;
+              }  
+        }  
+        }
+        .btn__ppal{
+          font-size: 2rem;
+          border: none;
+          margin-left:5rem;
+        }
+        .card{
+          margin: 4rem 5rem;
+          background-color: $color-primary;
+          border-radius: 0;
+          }
+    
+        .secundario{
+          margin-left: 5rem;
+          margin-bottom: 4rem;
+          &__tienda{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin: 1rem 5rem;
+          }
+          &__titulo{
+            font-family: 'Lora', serif;
+            text-transform: uppercase;
+            text-align:left;
+            &--index{
+                width: 100%;
+                font-size: 2rem;
+                margin-top: 4rem;
+                }  
+         }
+         &--sobreNosotros{
+            font-size: 1rem;
+            padding: 1rem 0;
+            padding-right: 1rem;
+            padding-left:3rem;
+          }
+          &--blends{
+               font-size: 1rem;
+               width: 100%;
+             }
+
+          &__contenedor--index{
+            display: grid;
+            grid-template-columns: 50% 50%;
+          }  
+          &__texto{
+            font-family: 'Roboto', sans-serif;
+
+                &--index{
+                    padding-right:3rem;
+                    padding-top: 5rem;
+                    font-size: 1.2rem;
+                  }
+                &--sobreNosotros{
+                    font-size: 1.3rem;
+                    padding-left: 0.5rem;
+                    color:$color-tertiary;
+                    font-family: 'Roboto', sans-serif;
+                  } 
+                &--blends{
+                    margin-bottom: 2rem;
+                  }   
+          }
+          &__index--img{
+            width: 100%;
+          } 
+          &__img--sobreNosotros{
+            margin-right: 1rem;
+          }
+          &__sobreNosotros{
+            padding-left:5rem;
+          }
+          &__autores{
+                    &figcaption{
+                    padding-left: 4rem;
+                    }
+          }
+          &__columna1{
+            display:flex;
+            flex-direction: column;
+            padding: 2rem;
+            background-color: $color-primary;
+            &figcaption{
+                padding: 0.5rem 0;
+                font-family: 'Lora', serif;
+                text-transform: uppercase;
+                font-weight: bold;
+              }
+            &h3{
+                font-family: 'Lora', serif;
+                margin-bottom:2rem;
+              }
+            &--sobreNosotros{
+                font-family: 'Lora', serif;
+                text-transform: uppercase;
+                font-weight: bold;
+            &figcaption{
+                text-align: start;
+                padding-left: 4rem;
+                }    
+              }    
+          }
+          &__columna2{
+            width:90%;
+            display:flex;
+            flex-direction: column;
+            padding: 2rem;
+            align-items: flex-start;
+            justify-content: space-evenly;
+          }  
+        &__contenedor{
+            &--blends{
+                width:83%;
+                background-color:$color-primary;
+                display:grid;
+                grid-template-columns: 30% 65%;
+                margin-bottom:2rem;
+              }  
+            &--sobreNosotros{
+                width:100%;
+                display:grid;
+                grid-template-columns: 20% 80%;
+                margin-bottom:2rem;
+              }  
+            &--tienda{
+                width:22%;
+                background-color:$color-primary;
+                margin: 2rem;
+                display:grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 70% 10% 10% 10%;
+                align-content: center;
+              }  
+            }
+        }
+        .formulario{
+          width: 100%;
+          display:grid;
+          justify-content: center;
+          grid-template-columns: 80%;
+          margin: 3rem 0;
+          &input{
+            padding: 1rem 0.5rem;
+            margin-top: 0.5rem;
+          }
+          &__campo{
+            display:flex;
+            flex-direction:column;
+            padding: 1rem 0;
+            font-family: 'Lora', serif;
+          }
+          &__fila1{
+            display:grid;
+            grid-template-columns: 47.5%  47.5%;
+            column-gap: 5%;
+          }
+          &__nombre{
+            display:flex;
+            flex-direction:column;
+            padding: 0.5rem 0;
+          }
+          &__boton{
+            background-color:$color-tertiary;
+            color:  white;
+            border:none;
+            height:3rem;
+            font-family: 'Lora', serif;
+            font-size: 1rem;
+            text-transform: uppercase;
+          }
+
+      }
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap');
+        .nav-link{
+        color:$color-tertiary;
+        font-family: 'Lora', serif;
+        text-transform: uppercase;
+        font-weight:bold;
+        font-size: 1.2rem;
+        }
+        .nav-link img{
+        height: 2.5rem;
+        }
+        .nav-link img:hover{
+            animation-name: un_efecto;
+            animation-iteration-count: initial;
+            animation-timing-function: ease-in;
+            animation-duration: 0.5s;
+        }
+        @keyframes un_efecto {
+            0%{ transform: rotate(30deg);}
+            10%{ transform: rotate(60deg);}
+            20%{ transform: rotate(90deg);}
+            30%{ transform: rotate(120deg);}
+            40%{ transform: rotate(150deg);}
+            50%{ transform: rotate(180deg);}
+            55%{ transform: rotate(210deg);}
+            60%{ transform: rotate(240deg);}
+            70%{ transform: rotate(270deg);}
+            80%{ transform: rotate(300deg);}
+            90%{ transform: rotate(330deg);}
+            100%{ transform: rotate(360deg);}
+        }
+        .nav-link:hover{
+            font-size: 1rem;
+            color: $color-tertiary;
+        }
+        .nav-link:focus{
+            color:antiquewhite;
+        }
+
+        .navbar{
+            background-color: $color-primary ;
+            margin: 0;
+        }
+        .ch{
+            margin: 0;
+        max-width: 100%;
+        background-color: $color-primary;
+        }
+
+        .navbar nav{
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn{
+        color:white;
+        background-color:$color-secondary;
+        font-family: 'Lora', serif;
+        font-weight: bold;
+        /* font-size: 1.3rem; */
+        text-transform: uppercase;
+        text-decoration: none;
+        border:none;
+        border-radius: 0;
+        }
+        .btn:hover{
+        background-color:$color-secondary;
+        font-size: 1.05rem;
+        color:white;
+        }
+        .btn:focus{
+        color:white;
+        background-color:$color-secondary;
+        border:0;
+        }
+        .card-title{
+        font-family: 'Lora', serif; 
+        }
+        .card-text{
+        font-family:'Roboto', sans-serif;
+        }
