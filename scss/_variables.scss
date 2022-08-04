@@ -2,3 +2,10 @@
 $color-primary:#eec78c; 
 $color-secondary:#967e5b;
 $color-tertiary:#342B1D;
+
+@mixin fuenteYMayusculaTitulo{
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    text-align: left;
+
+    }

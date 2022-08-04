@@ -5,9 +5,16 @@
     margin: 0;
     padding: 0;
   }
-
+  
+  
   @media (max-width: 576px) {
-       
+     
+    .titulos{
+      font-family: 'Lora', serif;
+      text-transform: uppercase;
+      text-align: left;
+    
+    }
         .header{
             &__nav--secciones{
                 display: grid;
@@ -19,8 +26,7 @@
                 padding: 1rem 0;
             }
             &__link{
-                font-family: 'Lora', serif;
-                text-transform: uppercase;
+                @extend .titulos;
                 color:$color-tertiary;
                 font-weight:bold;
                 text-decoration: none;
@@ -51,22 +57,21 @@
                 padding-left: 10%;
             } 
             &__titulo{
+              @extend .titulos;
                 margin-bottom:1rem;
-                font-family: 'Lora', serif;
-                text-transform: uppercase;
-                text-align:left;
                 padding-left: 1rem;
             }   
             &__titulo--sobreNosotros{
                 margin-bottom:2rem;
-                font-family: 'Lora', serif;
-                text-transform: uppercase;
-                text-align:left;
+              @extend .titulos;
+            }
+            &__titulo--blends{
+              @include fuenteYMayusculaTitulo;
+              padding-left:0;
             }  
             &__contacto--titulo{
-                font-family: 'Lora', serif;
+              @extend .titulos;
                 font-size: 2rem;
-                text-transform: uppercase;
                 padding: 2rem 0;
             }  
             &__texto{
@@ -102,23 +107,22 @@
                 border: none;
             }
             &__botonLink--index{
+              @extend .titulos;
                 width: 3.5rem;
                 height: 1rem;
                 padding: 1rem;
                 color: $color-tertiary;
                 background-color: $color-primary;
-                font-family: 'Lora', serif;
                 font-weight: bold;
                 font-size: 1.3rem;
-                text-transform: uppercase;
                 text-decoration: none;
             } 
             &__botonLink--blends{
+              @extend .titulos;
                 width: 5rem;
                 height: 2rem;
                 color: white;
                 background-color: $color-secondary;
-                font-family: 'Lora', serif;
                 font-weight: bold;
                 font-size: 1rem;
                 padding: 1rem;
@@ -129,7 +133,7 @@
                 height: 2rem;
                 color:$color-tertiary;
                 background-color: $color-secondary;
-                font-family: 'Lora', serif;
+                @extend .titulos;
                 font-weight: bold;
                 font-size: 1rem;
                 padding-bottom: 0.5rem;
@@ -141,7 +145,7 @@
                 height: 2rem;
                 color: white;
                 background-color: $color-secondary;
-                font-family: 'Lora', serif;
+                @extend .titulos;
                 font-weight: bold;
                 font-size: 1rem;
                 padding: 1rem;
@@ -165,9 +169,7 @@
             margin-left: 1rem;
             margin-bottom: 4rem;
             &__titulo{
-                font-family: 'Lora', serif;
-                text-transform: uppercase;
-                text-align:left;
+               @extend .titulos;
 
                 &--index{
                 width: 100%;
@@ -227,17 +229,15 @@
                 
                 &figcaption{
                     padding: 0.5rem 0;
-                    font-family: 'Lora', serif;
-                    text-transform: uppercase;
+                    @extend .titulos;
                     font-weight: bold;    
                 }
                 &h3{
-                    font-family: 'Lora', serif;
+                  @extend .titulos;
                     margin-bottom:2rem;
                 }
                 &--sobreNosotros{
-                    font-family: 'Lora', serif;
-                    text-transform: uppercase;
+                   @extend .titulos;
                     font-weight: bold;
                 }
                 &figcaption{
@@ -290,7 +290,7 @@
                     color:  white;
                     border:none;
                     /* height:3rem; */
-                    font-family: 'Lora', serif;
+                    @extend .titulos;
                     font-size: 1rem;
                     text-transform: uppercase;
                     }
@@ -302,7 +302,7 @@
                 display:flex;
                 flex-direction:column;
                 padding: 1rem 0;
-                font-family: 'Lora', serif;
+                @extend .titulos;
                 }
                 &__fila1{
                 display:grid;
@@ -317,7 +317,6 @@
     }
 
   @media (min-width: 577px) and (max-width: 768px) {
-
     .header{
         &__nav--secciones{
         display: flex;
@@ -328,8 +327,6 @@
         padding: 1rem 0;
         }
         &__link{
-            font-family: 'Lora', serif;
-            text-transform: uppercase;
             color:$color-tertiary;
             font-weight:bold;
             text-decoration: none;
@@ -362,7 +359,6 @@
             padding-left: 10%;
         } 
         &__contacto--titulo{
-            font-family: 'Lora', serif;
             font-size: 2rem;
             text-transform: uppercase;
             padding: 2rem 0;
@@ -371,22 +367,19 @@
             width: 100%;
             padding-left:5rem;
             margin-bottom:2rem;
-            font-family: 'Lora', serif;
             font-size: 3rem;
-            text-transform: uppercase;
             text-align:left;
                 &--sobreNosotros{
                     margin-bottom:2rem;
-                    font-family: 'Lora', serif;
-                    text-transform: uppercase;
-                    text-align:left;
+                }
+                &blends{
+                  padding-left: 0;
+                  @include fuenteYMayusculaTitulo;
                 }
         }    
         &contacto--titulo{
-            font-family: 'Lora', serif;
             font-weight: bold;
             font-size: 2rem;
-            text-transform: uppercase;
             padding: 2rem 0;
         }
         &__texto{
@@ -431,7 +424,7 @@
             padding: 1rem;
             color:$color-tertiary;
             background-color: $color-primary;
-            font-family: 'Lora', serif;
+            @include fuenteYMayusculaTitulo;
             font-weight: bold;
             font-size: 1.3rem;
             text-transform: uppercase;
@@ -442,7 +435,7 @@
             height: 2rem;
             color: white;
             background-color: $color-secondary;
-            font-family: 'Lora', serif;
+            @include fuenteYMayusculaTitulo;
             font-weight: bold;
             font-size: 1rem;
             padding: 1rem;
@@ -453,7 +446,7 @@
             height: 2rem;
             color:$color-tertiary;
             background-color: $color-secondary;
-            font-family: 'Lora', serif;
+            @include fuenteYMayusculaTitulo;
             font-weight: bold;
             font-size: 1rem;
             padding-bottom: 0.5rem;
@@ -482,8 +475,7 @@
             justify-content: center;
           }
         &__titulo{
-            font-family: 'Lora', serif;
-            text-transform: uppercase;
+           @include fuenteYMayusculaTitulo;
             text-align:left;
                 &--index{
                     width: 100%;
@@ -540,19 +532,17 @@
             background-color: $color-primary;
             &figcaption{
                 padding: 0.5rem 0;
-                font-family: 'Lora', serif;
-                text-transform: uppercase;
+                @include fuenteYMayusculaTitulo;
                 font-weight: bold;
               }
             &h3{
-                font-family: 'Lora', serif;
+              @include fuenteYMayusculaTitulo;
                 margin-bottom:2rem;
               }  
         
         } 
         &--sobreNosotros{
-            font-family: 'Lora', serif;
-            text-transform: uppercase;
+          @include fuenteYMayusculaTitulo;
             font-weight: bold;
                 &figcaption{
                     text-align: start;
@@ -607,7 +597,7 @@
             display:flex;
             flex-direction:column;
             padding: 1rem 0;
-            font-family: 'Lora', serif;
+            @include fuenteYMayusculaTitulo;
           }  
         &__fila1{
             display:grid;
@@ -624,15 +614,20 @@
             color:  white;
             border:none;
             height:3rem;
-            font-family: 'Lora', serif;
+            @include fuenteYMayusculaTitulo;
             font-size: 1rem;
-            text-transform: uppercase;
           }    
     }
     
   }
 
   @media (min-width: 769px) and (max-width: 992px) {
+
+    .titulos{
+      @include fuenteYMayusculaTitulo;
+      text-align: left;
+    
+    }
     .principal{
       width:auto;
       height:100vh;
@@ -658,21 +653,20 @@
         &__titulo{
             // padding-left:5rem;
             margin-bottom:2rem;
-            font-family: 'Lora', serif;
-            text-transform: uppercase;
+            @include fuenteYMayusculaTitulo;
             text-align:left;
                 &--sobreNosotros{
                     margin-bottom:2rem;
-                    font-family: 'Lora', serif;
-                    text-transform: uppercase;
-                    text-align:left;
+                    @include fuenteYMayusculaTitulo;
                   }
+                &--blends{
+                  @include fuenteYMayusculaTitulo;
+                }  
         }  
         &__contacto{
                 &--titulo{
-                    font-family: 'Lora', serif;
+                  @include fuenteYMayusculaTitulo;
                     font-size: 2rem;
-                    text-transform: uppercase;
                     padding: 2rem 0;
                 }
                 &--texto{
@@ -717,10 +711,9 @@
                 padding: 1rem;
                 color:$color-tertiary;
                 background-color:$color-primary;
-                font-family: 'Lora', serif;
+                @include fuenteYMayusculaTitulo;
                 font-weight: bold;
                 font-size: 1.3rem;
-                text-transform: uppercase;
                 text-decoration: none;
                 }
             &--blends{
@@ -728,7 +721,7 @@
                 height: 2rem;
                 color: white;
                 background-color: $color-secondary;
-                font-family: 'Lora', serif;
+                @include fuenteYMayusculaTitulo;
                 font-weight: bold;
                 font-size: 1rem;
                 padding: 1rem;
@@ -740,7 +733,7 @@
                 height: 2rem;
                 color: $color-tertiary;
                 background-color: $color-secondary;
-                font-family: 'Lora', serif;
+                @include fuenteYMayusculaTitulo;
                 font-weight: bold;
                 font-size: 1rem;
                 padding-bottom: 0.5rem;
@@ -763,8 +756,7 @@
         padding: 1rem 0;
         }
     &__link{
-        font-family: 'Lora', serif;
-        text-transform: uppercase;
+      @include fuenteYMayusculaTitulo;
         color:$color-tertiary;
         font-weight:bold;
         text-decoration: none;
@@ -789,8 +781,7 @@
             justify-content: flex-start;
           }
         &__titulo{
-            font-family: 'Lora', serif;
-            text-transform: uppercase;
+          @include fuenteYMayusculaTitulo;
             text-align:left;
             &--index{
                 width: 100%;
@@ -847,17 +838,15 @@
             background-color: $color-primary;
             &figcaption{
                 padding: 0.5rem 0;
-                font-family: 'Lora', serif;
-                text-transform: uppercase;
+                @include fuenteYMayusculaTitulo;
                 font-weight: bold;
             } 
             &h3{
-                font-family: 'Lora', serif;
+              @include fuenteYMayusculaTitulo;
                 margin-bottom:2rem;
             }  
             &--sobreNosotros{
-                font-family: 'Lora', serif;
-                text-transform: uppercase;
+              @include fuenteYMayusculaTitulo;
                 font-weight: bold;
                     &figcaption{
                         text-align: start;
@@ -912,7 +901,7 @@
         display:flex;
         flex-direction:column;
         padding: 1rem 0;
-        font-family: 'Lora', serif;
+        @include fuenteYMayusculaTitulo;
       }
     &__fila1{
         display:grid;
@@ -929,9 +918,8 @@
         color:  white;
         border:none;
         height:3rem;
-        font-family: 'Lora', serif;
+        @include fuenteYMayusculaTitulo;
         font-size: 1rem;
-        text-transform: uppercase;
       }  
     }
 
@@ -947,8 +935,7 @@
         padding: 1rem 0;
       }
     &__link{
-        font-family: 'Lora', serif;
-        text-transform: uppercase;
+      @include fuenteYMayusculaTitulo;
         color:$color-tertiary;
         font-weight:bold;
         text-decoration: none;
@@ -982,24 +969,24 @@
       }  
     &__titulo{
         margin-bottom:2rem;
-        font-family: 'Lora', serif;
-        text-transform: uppercase;
+        @include fuenteYMayusculaTitulo;
         text-align:left;
         &--index{
             padding-left:5rem;
           }
         &--sobreNosotros{
             margin-bottom:2rem;
-            font-family: 'Lora', serif;
-            text-transform: uppercase;
+            @include fuenteYMayusculaTitulo;
             text-align:left;
           } 
+        &--blends{
+          @include fuenteYMayusculaTitulo;
+        }  
         }  
         &__contacto{
         &--titulo{
-            font-family: 'Lora', serif;
+          @include fuenteYMayusculaTitulo;
             font-size: 2rem;
-            text-transform: uppercase;
             padding: 2rem 0;
         }
         &--texto{
@@ -1045,10 +1032,9 @@
                 padding: 1rem;
                 color: $color-tertiary;
                 background-color:$color-primary;
-                font-family: 'Lora', serif;
+                @include fuenteYMayusculaTitulo;
                 font-weight: bold;
                 font-size: 1.3rem;
-                text-transform: uppercase;
                 text-decoration: none;
               }
             &--blends{
@@ -1056,7 +1042,7 @@
                 height: 2rem;
                 color: white;
                 background-color: $color-primary;
-                font-family: 'Lora', serif;
+                @include fuenteYMayusculaTitulo;
                 font-weight: bold;
                 font-size: 1rem;
                 padding: 1rem;
@@ -1067,7 +1053,7 @@
                 height: 2rem;
                 color: $color-tertiary;
                 background-color: $color-secondary ;
-                font-family: 'Lora', serif;
+                @include fuenteYMayusculaTitulo;
                 font-weight: bold;
                 font-size: 1rem;
                 padding-bottom: 0.5rem;
@@ -1098,8 +1084,7 @@
               padding: 1rem 0;
             }
             &__link{
-              font-family: 'Lora', serif;
-              text-transform: uppercase;
+              @include fuenteYMayusculaTitulo;
               color:$color-tertiary;
               font-weight:bold;
               text-decoration: none;
@@ -1133,23 +1118,23 @@
           }
           &__titulo{
             margin-bottom:2rem;
-            font-family: 'Lora', serif;
-            text-transform: uppercase;
+            @include fuenteYMayusculaTitulo;
             text-align:left;
                 &--index{
                     padding-left:5rem;
                 }
                 &--sobreNosotros{
                     margin-bottom:2rem;
-                    font-family: 'Lora', serif;
-                    text-transform: uppercase;
+                    @include fuenteYMayusculaTitulo;
                     text-align:left;
                   }
+                &--blends{
+                    @include fuenteYMayusculaTitulo;
+                }  
           }
           &__contacto--titulo{
-            font-family: 'Lora', serif;
+            @include fuenteYMayusculaTitulo;
             font-size: 2rem;
-            text-transform: uppercase;
             padding: 2rem 0;
           }
           &__texto{
@@ -1194,10 +1179,8 @@
                 padding: 1rem;
                 color:$color-tertiary;
                 background-color: $color-primary;
-                font-family: 'Lora', serif;
                 font-weight: bold;
                 font-size: 1.3rem;
-                text-transform: uppercase;
                 text-decoration: none;
               }
             &--blends{
@@ -1205,7 +1188,7 @@
                 height: 2rem;
                 color: white;
                 background-color: $color-secondary;
-                font-family: 'Lora', serif;
+                @include fuenteYMayusculaTitulo;
                 font-weight: bold;
                 font-size: 1rem;
                 padding: 1rem;
@@ -1216,7 +1199,7 @@
                 height: 2rem;
                 color:$color-tertiary;
                 background-color: $color-secondary;
-                font-family: 'Lora', serif;
+                @include fuenteYMayusculaTitulo;
                 font-weight: bold;
                 font-size: 1rem;
                 padding-bottom: 0.5rem;
@@ -1246,7 +1229,7 @@
             margin: 1rem 5rem;
           }
           &__titulo{
-            font-family: 'Lora', serif;
+            @include fuenteYMayusculaTitulo;
             text-transform: uppercase;
             text-align:left;
             &--index{
@@ -1309,17 +1292,15 @@
             background-color: $color-primary;
             &figcaption{
                 padding: 0.5rem 0;
-                font-family: 'Lora', serif;
-                text-transform: uppercase;
+                @include fuenteYMayusculaTitulo;
                 font-weight: bold;
               }
             &h3{
-                font-family: 'Lora', serif;
+              @include fuenteYMayusculaTitulo;
                 margin-bottom:2rem;
               }
             &--sobreNosotros{
-                font-family: 'Lora', serif;
-                text-transform: uppercase;
+              @include fuenteYMayusculaTitulo;
                 font-weight: bold;
             &figcaption{
                 text-align: start;
@@ -1374,7 +1355,7 @@
             display:flex;
             flex-direction:column;
             padding: 1rem 0;
-            font-family: 'Lora', serif;
+            @include fuenteYMayusculaTitulo;
           }
           &__fila1{
             display:grid;
@@ -1391,9 +1372,8 @@
             color:  white;
             border:none;
             height:3rem;
-            font-family: 'Lora', serif;
+            @include fuenteYMayusculaTitulo;
             font-size: 1rem;
-            text-transform: uppercase;
           }
 
       }
@@ -1403,8 +1383,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap');
         .nav-link{
         color:$color-tertiary;
-        font-family: 'Lora', serif;
-        text-transform: uppercase;
+        @include fuenteYMayusculaTitulo;
         font-weight:bold;
         font-size: 1.2rem;
         }
@@ -1457,10 +1436,9 @@
         .btn{
         color:white;
         background-color:$color-secondary;
-        font-family: 'Lora', serif;
+        @include fuenteYMayusculaTitulo;
         font-weight: bold;
         /* font-size: 1.3rem; */
-        text-transform: uppercase;
         text-decoration: none;
         border:none;
         border-radius: 0;
