@@ -13,6 +13,7 @@
     <title>Tienda</title>
 </head>
 <body>
+    <!-- Menú -->
     <header>
         <nav class="navbar navbar-expand-lg" aria-label="Twelfth navbar example">
           <div class="container-fluid">
@@ -41,62 +42,82 @@
             </div>
           </div>
         </nav>
-   </header>
+    </header>
+    <!-- Contenido principal -->
     <main class="principal principal__index">
         <h1 class="principal__titulo principal__titulo--index">Tienda</h1>
         <p class="principal__texto  principal__texto--index ">En nuestra tienda encontrarás una gran variedad 
             de Té y mezclas (Blends) y accesorios para que puedas disfrutar de este mundo aromático.
         </p>
+        <!-- <section>
+            <nav class="header__nav--secciones">
+              <li><a class="header__link" href="">Nuestros Blends</a></li>
+              <li><a class="header__link" href="">Clásicos</a></li>
+              <li><a class="header__link" href="">Accesorios</a></li>
+            </nav>
+        </section> 
+    -->
     </main>
-   <section>
-        <nav class="header__nav--secciones">
-        <li><a class="header__link" href="">Nuestros Blends</a></li>
-        <li><a class="header__link" href="">Clásicos</a></li>
-        <li><a class="header__link" href="">Accesorios</a></li>
-        </nav>
-    </section> 
-
+    
+    <!--Cards de la tienda-->
     <aside class="secundario__tienda">
-        
       <div class="card" style="width: 18rem;">
         <img src="../assets/infusion_te.jpg" class="card-img-top" alt="Infusión de té Rooibos">
         <div class="card-body">
-          <h4 class="card-title">Rooibos Canela</h4>
-          <h4 class="card-text">$350</h4>
+          <h2 class="card-title">Rooibos Canela</h2>
+          <h3 class="card-text">$350</h3>
+          <a class="btn btn-primary" href="tienda.html" role="button">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="../assets/infusion_te_dos.jpg" class="card-img-top" alt="Té Verde Matcha Gracia Bleend Green">
+        <div class="card-body">
+          <h2 class="card-title">Té Verde Matcha Gracia Blend Green</h2>
+          <h3 class="card-text">$470</h3>
+          <a class="btn btn-primary" href="tienda.html" role="button">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="../assets/infusion_te_cinco.jpg" class="card-img-top" alt="Blueberry Muffin">
+        <div class="card-body">
+          <h2 class="card-title">Blueberry Muffin</h2>
+          <h3 class="card-text">$780</h3>
+          <a class="btn btn-primary" href="tienda.html" role="button">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="../assets/infusion_te_tres.jpg" class="card-img-top" alt="Mojitos Tea">
+        <div class="card-body">
+          <h2 class="card-title">Mojito Tea</h2>
+          <h3 class="card-text">$280</h3>
           <a class="btn btn-primary" href="tienda.html" role="button">Comprar</a>
         </div>
       </div>
       
       <div class="card" style="width: 18rem;">
-        <img src="../assets/infusion_te_dos.jpg" class="card-img-top" alt="Infusión de té Rooibos">
+        <img src="../assets/infusion_te_seis.jpg" class="card-img-top" alt="Té Negro Gingerbread">
         <div class="card-body">
-          <h4 class="card-title">Té Verde Matcha Gracia Blend Green</h4>
-          <h4 class="card-text">$470</h4>
+          <h2 class="card-title">Té Negro Gingerbread</h2>
+          <h3 class="card-text">$630</h3>
           <a class="btn btn-primary" href="tienda.html" role="button">Comprar</a>
         </div>
       </div>
 
       <div class="card" style="width: 18rem;">
-        <img src="../assets/infusion_te_tres.jpg" class="card-img-top" alt="Infusión de té Rooibos">
+        <img src="../assets/infusion_te_cuatro.jpg" class="card-img-top" alt="Té Verde Green Pink">
         <div class="card-body">
-          <h4 class="card-title">Mojito Tea</h4>
-          <h4 class="card-text">$280</h4>
-          <a class="btn btn-primary" href="tienda.html" role="button">Comprar</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="../assets/infusion_te_cuatro.jpg" class="card-img-top" alt="Infusión de té Rooibos">
-        <div class="card-body">
-          <h4 class="card-title">Té verde Green Pink</h4>
-          <h4 class="card-text">$795</h4>
+          <h2 class="card-title">Té Verde Green Pink</h2>
+          <h3 class="card-text">$795</h3>
           <a class="btn btn-primary" href="tienda.html" role="button">Comprar</a>
         </div>
       </div>
     
     </aside>
-    <div class="container ch">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+    <!-- Pie de página -->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top ch">
           <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
               <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
@@ -116,7 +137,6 @@
               </svg></a></li>
           </ul>
         </footer>
-    </div>
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

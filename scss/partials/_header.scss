@@ -1,0 +1,7 @@
+.header__nav--secciones{
+    @include estilos(center, none, $color-primary);
+}
+
+.header__link{
+    @include linksHeader($color-tertiary,fuenteYMayusculaTitulo,bold, none, 1rem);
+}

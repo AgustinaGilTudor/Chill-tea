@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap');
-@import "variables";
+// Variables
+@import "./misc/variables";
+// Normalizadors
+@import "./misc/normalize";
+// Mixins
+@import  "./misc/mixins";
+// Header
+@import "./partials/header";
 
- *{
-    margin: 0;
-    padding: 0;
-  }
-  
   
   @media (max-width: 576px) {
      
@@ -20,17 +21,9 @@
                 display: grid;
                 grid-template-columns: 100%;
                 justify-content: center;
-                align-items: center;
-                list-style-type:none;
-                background-color: $color-primary;
-                padding: 1rem 0;
             }
             &__link{
                 @extend .titulos;
-                color:$color-tertiary;
-                font-weight:bold;
-                text-decoration: none;
-                padding: 1rem;
                     &:hover{
                     color:$color-secondary;
                     }
@@ -168,6 +161,11 @@
         .secundario{
             margin-left: 1rem;
             margin-bottom: 4rem;
+            &__tienda{
+              display: grid;
+              grid-template-columns: 33% 33% 33%;
+              align-content: center
+            }
             &__titulo{
                @extend .titulos;
 
@@ -219,7 +217,6 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                /* margin: 1rem 5rem; */
             }  
             &__columna1{
                 display:flex;
@@ -292,6 +289,7 @@
                     /* height:3rem; */
                     @extend .titulos;
                     font-size: 1rem;
+                    text-align: center;
                     text-transform: uppercase;
                     }
                 &input{
@@ -321,19 +319,9 @@
         &__nav--secciones{
         display: flex;
         justify-content: center;
-        align-items: center;
-        list-style-type:none;
-        background-color: $color-primary;
-        padding: 1rem 0;
         }
-        &__link{
-            color:$color-tertiary;
-            font-weight:bold;
-            text-decoration: none;
-            padding: 1rem;
-                &:hover{
-                    color:$color-secondary;   
-                }
+        &__link:hover{
+            color:$color-secondary;  
         }
     } 
     .principal{
@@ -469,11 +457,12 @@
     .secundario{
       margin-left: 5rem;
       margin-bottom: 4rem;
-        &_tienda{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-          }
+      &__tienda{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 0 1rem;
+        align-content: center
+      }
         &__titulo{
            @include fuenteYMayusculaTitulo;
             text-align:left;
@@ -651,7 +640,6 @@
             padding-left: 10%;
           }  
         &__titulo{
-            // padding-left:5rem;
             margin-bottom:2rem;
             @include fuenteYMayusculaTitulo;
             text-align:left;
@@ -750,20 +738,9 @@
     &__nav--secciones{
         display: flex;
         justify-content: center;
-        align-items: center;
-        list-style-type:none;
-        background-color: $color-primary;
-        padding: 1rem 0;
         }
-    &__link{
-      @include fuenteYMayusculaTitulo;
-        color:$color-tertiary;
-        font-weight:bold;
-        text-decoration: none;
-        padding: 1rem;
-            &:hover{
-                color:$color-secondary;  
-            }
+    &__link :hover{
+          color:$color-secondary; 
         }
  }
     .card{
@@ -775,11 +752,11 @@
     .secundario{
       margin-left: 5rem;
       margin-bottom: 4rem;
-        &__tienda{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-          }
+      &__tienda{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        align-content: center
+      }
         &__titulo{
           @include fuenteYMayusculaTitulo;
             text-align:left;
@@ -929,20 +906,9 @@
     &__nav--secciones{
         display: flex;
         justify-content: center;
-        align-items: center;
-        list-style-type:none;
-        background-color:$color-primary;
-        padding: 1rem 0;
       }
-    &__link{
-      @include fuenteYMayusculaTitulo;
-        color:$color-tertiary;
-        font-weight:bold;
-        text-decoration: none;
-        padding: 1rem;
-            &:hover{
-                color:$color-secondary;   
-            }
+        &__link:hover {
+          color:$color-secondary;
         }
     }
     .principal{
@@ -1078,20 +1044,9 @@
             &__nav--secciones{
               display: flex;
               justify-content: center;
-              align-items: center;
-              list-style-type:none;
-              background-color: $color-primary;
-              padding: 1rem 0;
             }
-            &__link{
-              @include fuenteYMayusculaTitulo;
-              color:$color-tertiary;
-              font-weight:bold;
-              text-decoration: none;
-              padding: 1rem;
-                &:hover{
-                    color:$color-secondary;
-                }
+            &__link:hover{
+              color:$color-secondary;
             }
         }
         .principal{
@@ -1223,10 +1178,9 @@
           margin-left: 5rem;
           margin-bottom: 4rem;
           &__tienda{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            margin: 1rem 5rem;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            align-content: center
           }
           &__titulo{
             @include fuenteYMayusculaTitulo;
@@ -1380,7 +1334,7 @@
     
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap');
         .nav-link{
         color:$color-tertiary;
         @include fuenteYMayusculaTitulo;
@@ -1438,7 +1392,6 @@
         background-color:$color-secondary;
         @include fuenteYMayusculaTitulo;
         font-weight: bold;
-        /* font-size: 1.3rem; */
         text-decoration: none;
         border:none;
         border-radius: 0;

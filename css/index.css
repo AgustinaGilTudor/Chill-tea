@@ -1,9 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap");
 /* Este contenido se importa a css*/
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
+
+ul {
+  list-style-type: none; }
+
+.header__nav--secciones {
+  align-items: center;
+  list-style-type: none;
+  background-color: #eec78c;
+  padding: 1rem 0; }
+
+.header__link {
+  color: #342B1D;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem; }
 
 @media (max-width: 576px) {
   .titulos, .header__link, .principal__titulo, .principal__titulo--sobreNosotros, .principal__contacto--titulo, .principal__botonLink--index, .principal__botonLink--blends, .principal__botonLink--tienda, .secundario__titulo, .secundario__columna1figcaption, .secundario__columna1h3, .secundario__columna1--sobreNosotros, .formulario__boton, .formulario__campo {
@@ -13,18 +28,9 @@
   .header__nav--secciones {
     display: grid;
     grid-template-columns: 100%;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    background-color: #eec78c;
-    padding: 1rem 0; }
-  .header__link {
-    color: #342B1D;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 1rem; }
-    .header__link:hover {
-      color: #967e5b; }
+    justify-content: center; }
+  .header__link:hover {
+    color: #967e5b; }
   .principal {
     width: auto;
     margin: 0;
@@ -130,6 +136,10 @@
   .secundario {
     margin-left: 1rem;
     margin-bottom: 4rem; }
+    .secundario__tienda {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      align-content: center; }
     .secundario__titulo--index {
       width: 100%;
       font-size: 2rem;
@@ -165,8 +175,7 @@
     .secundario__tienda {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      /* margin: 1rem 5rem; */ }
+      justify-content: center; }
     .secundario__columna1 {
       display: flex;
       flex-direction: column;
@@ -221,6 +230,7 @@
       border: none;
       /* height:3rem; */
       font-size: 1rem;
+      text-align: center;
       text-transform: uppercase; }
     .formularioinput {
       padding: 1rem 0.5rem;
@@ -240,18 +250,9 @@
 @media (min-width: 577px) and (max-width: 768px) {
   .header__nav--secciones {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    background-color: #eec78c;
-    padding: 1rem 0; }
-  .header__link {
-    color: #342B1D;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 1rem; }
-    .header__link:hover {
-      color: #967e5b; }
+    justify-content: center; }
+  .header__link:hover {
+    color: #967e5b; }
   .principal {
     width: auto;
     height: 100vh;
@@ -367,10 +368,11 @@
   .secundario {
     margin-left: 5rem;
     margin-bottom: 4rem; }
-    .secundario_tienda {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; }
+    .secundario__tienda {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      padding: 0 1rem;
+      align-content: center; }
     .secundario__titulo {
       font-family: 'Lora', serif;
       text-transform: uppercase;
@@ -608,21 +610,9 @@
     margin-left: 5rem; }
   .header__nav--secciones {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    background-color: #eec78c;
-    padding: 1rem 0; }
-  .header__link {
-    font-family: 'Lora', serif;
-    text-transform: uppercase;
-    text-align: left;
-    color: #342B1D;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 1rem; }
-    .header__link:hover {
-      color: #967e5b; }
+    justify-content: center; }
+  .header__link :hover {
+    color: #967e5b; }
   .card {
     margin: 5rem 5rem;
     background-color: #eec78c;
@@ -631,9 +621,9 @@
     margin-left: 5rem;
     margin-bottom: 4rem; }
     .secundario__tienda {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start; }
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      align-content: center; }
     .secundario__titulo {
       font-family: 'Lora', serif;
       text-transform: uppercase;
@@ -760,21 +750,9 @@
 @media (min-width: 993px) {
   .header__nav--secciones {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    background-color: #eec78c;
-    padding: 1rem 0; }
-  .header__link {
-    font-family: 'Lora', serif;
-    text-transform: uppercase;
-    text-align: left;
-    color: #342B1D;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 1rem; }
-    .header__link:hover {
-      color: #967e5b; }
+    justify-content: center; }
+  .header__link:hover {
+    color: #967e5b; }
   .principal {
     width: auto;
     height: 100vh;
@@ -893,21 +871,9 @@
 @media (min-width: 993px) {
   .header__nav--secciones {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    background-color: #eec78c;
-    padding: 1rem 0; }
-  .header__link {
-    font-family: 'Lora', serif;
-    text-transform: uppercase;
-    text-align: left;
-    color: #342B1D;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 1rem; }
-    .header__link:hover {
-      color: #967e5b; }
+    justify-content: center; }
+  .header__link:hover {
+    color: #967e5b; }
   .principal {
     width: auto;
     height: 100vh;
@@ -1023,10 +989,9 @@
     margin-left: 5rem;
     margin-bottom: 4rem; }
     .secundario__tienda {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      margin: 1rem 5rem; }
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      align-content: center; }
     .secundario__titulo {
       font-family: 'Lora', serif;
       text-transform: uppercase;
@@ -1223,7 +1188,6 @@
   text-transform: uppercase;
   text-align: left;
   font-weight: bold;
-  /* font-size: 1.3rem; */
   text-decoration: none;
   border: none;
   border-radius: 0; }

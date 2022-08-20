@@ -1,0 +1,22 @@
+@mixin fuenteYMayusculaTitulo{
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    text-align: left;
+
+    }
+
+@mixin estilos ($items, $decorations, $background){
+    align-items: center;
+    list-style-type:none;
+    background-color: $color-primary;
+    padding: 1rem 0;
+}
+
+@mixin linksHeader ($color, $font, $fontWeight, $txtDecoration, $padding) {
+    color: $color;
+    font-weight:$fontWeight;
+    text-decoration: $txtDecoration;
+    padding: $padding;
+    
+
+}
