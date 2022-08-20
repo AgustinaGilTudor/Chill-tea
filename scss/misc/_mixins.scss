@@ -1,7 +1,7 @@
-@mixin fuenteYMayusculaTitulo{
+@mixin fuenteYMayusculaTitulo ($txtAlign){
     font-family: 'Lora', serif;
     text-transform: uppercase;
-    text-align: left;
+    text-align: $txtAlign;
 
     }
 

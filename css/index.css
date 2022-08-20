@@ -21,7 +21,7 @@ ul {
   padding: 1rem; }
 
 @media (max-width: 576px) {
-  .titulos, .header__link, .principal__titulo, .principal__titulo--sobreNosotros, .principal__contacto--titulo, .principal__botonLink--index, .principal__botonLink--blends, .principal__botonLink--tienda, .secundario__titulo, .secundario__columna1figcaption, .secundario__columna1h3, .secundario__columna1--sobreNosotros, .formulario__boton, .formulario__campo {
+  .titulos, .header__link, .principal__titulo, .principal__titulo--sobreNosotros, .principal__contacto--titulo, .principal__botonLink--index, .principal__botonLink--blends, .principal__botonLink--tienda, .secundario__titulo, .secundario__columna1figcaption, .secundario__columna1h3, .formulario__boton, .formulario__campo {
     font-family: 'Lora', serif;
     text-transform: uppercase;
     text-align: left; }
@@ -183,14 +183,15 @@ ul {
       background-color: #eec78c; }
       .secundario__columna1figcaption {
         padding: 0.5rem 0;
-        font-weight: bold; }
+        font-weight: bold;
+        padding-left: 4rem; }
       .secundario__columna1h3 {
         margin-bottom: 2rem; }
       .secundario__columna1--sobreNosotros {
-        font-weight: bold; }
-      .secundario__columna1figcaption {
-        text-align: start;
-        padding-left: 4rem; }
+        font-family: 'Lora', serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center; }
     .secundario__columna2 {
       width: 90%;
       display: flex;
@@ -228,7 +229,6 @@ ul {
       background-color: #342B1D;
       color: white;
       border: none;
-      /* height:3rem; */
       font-size: 1rem;
       text-align: center;
       text-transform: uppercase; }
@@ -245,7 +245,8 @@ ul {
     .formulario__nombre {
       display: flex;
       flex-direction: column;
-      padding: 0.5rem 0; } }
+      padding: 0.5rem 0;
+      line-height: 2rem; } }
 
 @media (min-width: 577px) and (max-width: 768px) {
   .header__nav--secciones {
@@ -430,7 +431,7 @@ ul {
     .secundario--sobreNosotros {
       font-family: 'Lora', serif;
       text-transform: uppercase;
-      text-align: left;
+      text-align: center;
       font-weight: bold; }
       .secundario--sobreNosotrosfigcaption {
         text-align: start;
@@ -485,7 +486,8 @@ ul {
     .formulario__nombre {
       display: flex;
       flex-direction: column;
-      padding: 0.5rem 0; }
+      padding: 0.5rem 0;
+      line-height: 2rem; }
     .formulario__boton {
       background-color: #342B1D;
       color: white;
@@ -493,11 +495,11 @@ ul {
       height: 3rem;
       font-family: 'Lora', serif;
       text-transform: uppercase;
-      text-align: left;
+      text-align: center;
       font-size: 1rem; } }
 
 @media (min-width: 769px) and (max-width: 992px) {
-  .titulos, .header__link, .principal__titulo, .principal__titulo--sobreNosotros, .principal__contacto--titulo, .principal__botonLink--index, .principal__botonLink--blends, .principal__botonLink--tienda, .secundario__titulo, .secundario__columna1figcaption, .secundario__columna1h3, .secundario__columna1--sobreNosotros, .formulario__boton, .formulario__campo {
+  .titulos, .header__link, .principal__titulo, .principal__titulo--sobreNosotros, .principal__contacto--titulo, .principal__botonLink--index, .principal__botonLink--blends, .principal__botonLink--tienda, .secundario__titulo, .secundario__columna1figcaption, .secundario__columna1h3, .formulario__boton, .formulario__campo {
     font-family: 'Lora', serif;
     text-transform: uppercase;
     text-align: left;
@@ -672,7 +674,7 @@ ul {
         padding: 0.5rem 0;
         font-family: 'Lora', serif;
         text-transform: uppercase;
-        text-align: left;
+        text-align: center;
         font-weight: bold; }
       .secundario__columna1h3 {
         font-family: 'Lora', serif;
@@ -736,7 +738,8 @@ ul {
     .formulario__nombre {
       display: flex;
       flex-direction: column;
-      padding: 0.5rem 0; }
+      padding: 0.5rem 0;
+      line-height: 2rem; }
     .formulario__boton {
       background-color: #342B1D;
       color: white;
@@ -744,7 +747,7 @@ ul {
       height: 3rem;
       font-family: 'Lora', serif;
       text-transform: uppercase;
-      text-align: left;
+      text-align: center;
       font-size: 1rem; } }
 
 @media (min-width: 993px) {
@@ -1107,7 +1110,8 @@ ul {
     .formulario__nombre {
       display: flex;
       flex-direction: column;
-      padding: 0.5rem 0; }
+      padding: 0.5rem 0;
+      line-height: 2rem; }
     .formulario__boton {
       background-color: #342B1D;
       color: white;
@@ -1115,7 +1119,7 @@ ul {
       height: 3rem;
       font-family: 'Lora', serif;
       text-transform: uppercase;
-      text-align: left;
+      text-align: center;
       font-size: 1rem; } }
 
 .nav-link {
@@ -1203,7 +1207,8 @@ ul {
   border: 0; }
 
 .card-title {
-  font-family: 'Lora', serif; }
+  font-family: 'Lora', serif;
+  font-size: 1.5rem; }
 
 .card-text {
   font-family: 'Roboto', sans-serif; }

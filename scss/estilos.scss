@@ -59,7 +59,7 @@
               @extend .titulos;
             }
             &__titulo--blends{
-              @include fuenteYMayusculaTitulo;
+              @include fuenteYMayusculaTitulo(left);
               padding-left:0;
             }  
             &__contacto--titulo{
@@ -223,24 +223,22 @@
                 flex-direction: column;
                 padding: 2rem;
                 background-color: $color-primary;
-                
                 &figcaption{
                     padding: 0.5rem 0;
                     @extend .titulos;
-                    font-weight: bold;    
+                    font-weight: bold;  
+                    padding-left: 4rem;  
                 }
                 &h3{
                   @extend .titulos;
                     margin-bottom:2rem;
                 }
                 &--sobreNosotros{
-                   @extend .titulos;
+                  font-family: 'Lora', serif;
+                  text-transform: uppercase;
                     font-weight: bold;
+                    text-align: center;
                 }
-                &figcaption{
-                    text-align: start;
-                    padding-left: 4rem;
-                }  
             }
             &__columna2{
                 width:90%;
@@ -286,7 +284,6 @@
                     background-color:$color-tertiary;
                     color:  white;
                     border:none;
-                    /* height:3rem; */
                     @extend .titulos;
                     font-size: 1rem;
                     text-align: center;
@@ -310,6 +307,7 @@
                 display:flex;
                 flex-direction:column;
                 padding: 0.5rem 0;
+                line-height: 2rem;
                 }
         }
     }
@@ -362,7 +360,7 @@
                 }
                 &blends{
                   padding-left: 0;
-                  @include fuenteYMayusculaTitulo;
+                  @include fuenteYMayusculaTitulo(left);
                 }
         }    
         &contacto--titulo{
@@ -412,7 +410,7 @@
             padding: 1rem;
             color:$color-tertiary;
             background-color: $color-primary;
-            @include fuenteYMayusculaTitulo;
+            @include fuenteYMayusculaTitulo(left);
             font-weight: bold;
             font-size: 1.3rem;
             text-transform: uppercase;
@@ -423,7 +421,7 @@
             height: 2rem;
             color: white;
             background-color: $color-secondary;
-            @include fuenteYMayusculaTitulo;
+            @include fuenteYMayusculaTitulo(left);
             font-weight: bold;
             font-size: 1rem;
             padding: 1rem;
@@ -434,7 +432,7 @@
             height: 2rem;
             color:$color-tertiary;
             background-color: $color-secondary;
-            @include fuenteYMayusculaTitulo;
+            @include fuenteYMayusculaTitulo(left);
             font-weight: bold;
             font-size: 1rem;
             padding-bottom: 0.5rem;
@@ -464,7 +462,7 @@
         align-content: center
       }
         &__titulo{
-           @include fuenteYMayusculaTitulo;
+           @include fuenteYMayusculaTitulo(left);
             text-align:left;
                 &--index{
                     width: 100%;
@@ -521,17 +519,17 @@
             background-color: $color-primary;
             &figcaption{
                 padding: 0.5rem 0;
-                @include fuenteYMayusculaTitulo;
+                @include fuenteYMayusculaTitulo(left);
                 font-weight: bold;
               }
             &h3{
-              @include fuenteYMayusculaTitulo;
+              @include fuenteYMayusculaTitulo(left);
                 margin-bottom:2rem;
               }  
         
         } 
         &--sobreNosotros{
-          @include fuenteYMayusculaTitulo;
+          @include fuenteYMayusculaTitulo(center);
             font-weight: bold;
                 &figcaption{
                     text-align: start;
@@ -586,7 +584,7 @@
             display:flex;
             flex-direction:column;
             padding: 1rem 0;
-            @include fuenteYMayusculaTitulo;
+            @include fuenteYMayusculaTitulo(left);
           }  
         &__fila1{
             display:grid;
@@ -597,13 +595,14 @@
             display:flex;
             flex-direction:column;
             padding: 0.5rem 0;
+            line-height: 2rem;
             }  
         &__boton{
             background-color:$color-tertiary;
             color:  white;
             border:none;
             height:3rem;
-            @include fuenteYMayusculaTitulo;
+             @include fuenteYMayusculaTitulo(center);
             font-size: 1rem;
           }    
     }
@@ -613,7 +612,7 @@
   @media (min-width: 769px) and (max-width: 992px) {
 
     .titulos{
-      @include fuenteYMayusculaTitulo;
+      @include fuenteYMayusculaTitulo(left);
       text-align: left;
     
     }
@@ -641,19 +640,19 @@
           }  
         &__titulo{
             margin-bottom:2rem;
-            @include fuenteYMayusculaTitulo;
+            @include fuenteYMayusculaTitulo(left);
             text-align:left;
                 &--sobreNosotros{
                     margin-bottom:2rem;
-                    @include fuenteYMayusculaTitulo;
+                    @include fuenteYMayusculaTitulo(left);
                   }
                 &--blends{
-                  @include fuenteYMayusculaTitulo;
+                  @include fuenteYMayusculaTitulo(left);
                 }  
         }  
         &__contacto{
                 &--titulo{
-                  @include fuenteYMayusculaTitulo;
+                  @include fuenteYMayusculaTitulo(left);
                     font-size: 2rem;
                     padding: 2rem 0;
                 }
@@ -699,7 +698,7 @@
                 padding: 1rem;
                 color:$color-tertiary;
                 background-color:$color-primary;
-                @include fuenteYMayusculaTitulo;
+                @include fuenteYMayusculaTitulo(left);
                 font-weight: bold;
                 font-size: 1.3rem;
                 text-decoration: none;
@@ -709,7 +708,7 @@
                 height: 2rem;
                 color: white;
                 background-color: $color-secondary;
-                @include fuenteYMayusculaTitulo;
+                @include fuenteYMayusculaTitulo(left);
                 font-weight: bold;
                 font-size: 1rem;
                 padding: 1rem;
@@ -721,7 +720,7 @@
                 height: 2rem;
                 color: $color-tertiary;
                 background-color: $color-secondary;
-                @include fuenteYMayusculaTitulo;
+                @include fuenteYMayusculaTitulo(left);
                 font-weight: bold;
                 font-size: 1rem;
                 padding-bottom: 0.5rem;
@@ -758,7 +757,7 @@
         align-content: center
       }
         &__titulo{
-          @include fuenteYMayusculaTitulo;
+          @include fuenteYMayusculaTitulo(left);
             text-align:left;
             &--index{
                 width: 100%;
@@ -815,15 +814,15 @@
             background-color: $color-primary;
             &figcaption{
                 padding: 0.5rem 0;
-                @include fuenteYMayusculaTitulo;
+                @include fuenteYMayusculaTitulo(center);
                 font-weight: bold;
             } 
             &h3{
-              @include fuenteYMayusculaTitulo;
+              @include fuenteYMayusculaTitulo(left);
                 margin-bottom:2rem;
             }  
             &--sobreNosotros{
-              @include fuenteYMayusculaTitulo;
+              @include fuenteYMayusculaTitulo(left);
                 font-weight: bold;
                     &figcaption{
                         text-align: start;
@@ -878,7 +877,7 @@
         display:flex;
         flex-direction:column;
         padding: 1rem 0;
-        @include fuenteYMayusculaTitulo;
+        @include fuenteYMayusculaTitulo(left);
       }
     &__fila1{
         display:grid;
@@ -889,13 +888,14 @@
         display:flex;
         flex-direction:column;
         padding: 0.5rem 0;
+        line-height: 2rem;
       }  
     &__boton{
         background-color:$color-tertiary;
         color:  white;
         border:none;
         height:3rem;
-        @include fuenteYMayusculaTitulo;
+        @include fuenteYMayusculaTitulo(center);
         font-size: 1rem;
       }  
     }
@@ -935,23 +935,23 @@
       }  
     &__titulo{
         margin-bottom:2rem;
-        @include fuenteYMayusculaTitulo;
+        @include fuenteYMayusculaTitulo(left);
         text-align:left;
         &--index{
             padding-left:5rem;
           }
         &--sobreNosotros{
             margin-bottom:2rem;
-            @include fuenteYMayusculaTitulo;
+            @include fuenteYMayusculaTitulo(left);
             text-align:left;
           } 
         &--blends{
-          @include fuenteYMayusculaTitulo;
+          @include fuenteYMayusculaTitulo(left);
         }  
         }  
         &__contacto{
         &--titulo{
-          @include fuenteYMayusculaTitulo;
+          @include fuenteYMayusculaTitulo(left);
             font-size: 2rem;
             padding: 2rem 0;
         }
@@ -998,7 +998,7 @@
                 padding: 1rem;
                 color: $color-tertiary;
                 background-color:$color-primary;
-                @include fuenteYMayusculaTitulo;
+                @include fuenteYMayusculaTitulo(left);
                 font-weight: bold;
                 font-size: 1.3rem;
                 text-decoration: none;
@@ -1008,7 +1008,7 @@
                 height: 2rem;
                 color: white;
                 background-color: $color-primary;
-                @include fuenteYMayusculaTitulo;
+                @include fuenteYMayusculaTitulo(left);
                 font-weight: bold;
                 font-size: 1rem;
                 padding: 1rem;
@@ -1019,7 +1019,7 @@
                 height: 2rem;
                 color: $color-tertiary;
                 background-color: $color-secondary ;
-                @include fuenteYMayusculaTitulo;
+                @include fuenteYMayusculaTitulo(left);
                 font-weight: bold;
                 font-size: 1rem;
                 padding-bottom: 0.5rem;
@@ -1073,22 +1073,22 @@
           }
           &__titulo{
             margin-bottom:2rem;
-            @include fuenteYMayusculaTitulo;
+            @include fuenteYMayusculaTitulo(left);
             text-align:left;
                 &--index{
                     padding-left:5rem;
                 }
                 &--sobreNosotros{
                     margin-bottom:2rem;
-                    @include fuenteYMayusculaTitulo;
+                    @include fuenteYMayusculaTitulo(left);
                     text-align:left;
                   }
                 &--blends{
-                    @include fuenteYMayusculaTitulo;
+                    @include fuenteYMayusculaTitulo(left);
                 }  
           }
           &__contacto--titulo{
-            @include fuenteYMayusculaTitulo;
+            @include fuenteYMayusculaTitulo(left);
             font-size: 2rem;
             padding: 2rem 0;
           }
@@ -1143,7 +1143,7 @@
                 height: 2rem;
                 color: white;
                 background-color: $color-secondary;
-                @include fuenteYMayusculaTitulo;
+                @include fuenteYMayusculaTitulo(left);
                 font-weight: bold;
                 font-size: 1rem;
                 padding: 1rem;
@@ -1154,7 +1154,7 @@
                 height: 2rem;
                 color:$color-tertiary;
                 background-color: $color-secondary;
-                @include fuenteYMayusculaTitulo;
+                @include fuenteYMayusculaTitulo(left);
                 font-weight: bold;
                 font-size: 1rem;
                 padding-bottom: 0.5rem;
@@ -1183,7 +1183,7 @@
             align-content: center
           }
           &__titulo{
-            @include fuenteYMayusculaTitulo;
+            @include fuenteYMayusculaTitulo(left);
             text-transform: uppercase;
             text-align:left;
             &--index{
@@ -1246,15 +1246,15 @@
             background-color: $color-primary;
             &figcaption{
                 padding: 0.5rem 0;
-                @include fuenteYMayusculaTitulo;
+                @include fuenteYMayusculaTitulo(left);
                 font-weight: bold;
               }
             &h3{
-              @include fuenteYMayusculaTitulo;
+              @include fuenteYMayusculaTitulo(left);
                 margin-bottom:2rem;
               }
             &--sobreNosotros{
-              @include fuenteYMayusculaTitulo;
+              @include fuenteYMayusculaTitulo(left);
                 font-weight: bold;
             &figcaption{
                 text-align: start;
@@ -1309,7 +1309,7 @@
             display:flex;
             flex-direction:column;
             padding: 1rem 0;
-            @include fuenteYMayusculaTitulo;
+            @include fuenteYMayusculaTitulo(left);
           }
           &__fila1{
             display:grid;
@@ -1320,13 +1320,14 @@
             display:flex;
             flex-direction:column;
             padding: 0.5rem 0;
+            line-height: 2rem;
           }
           &__boton{
             background-color:$color-tertiary;
             color:  white;
             border:none;
             height:3rem;
-            @include fuenteYMayusculaTitulo;
+            @include fuenteYMayusculaTitulo(center);
             font-size: 1rem;
           }
 
@@ -1337,7 +1338,7 @@
 // @import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap');
         .nav-link{
         color:$color-tertiary;
-        @include fuenteYMayusculaTitulo;
+        @include fuenteYMayusculaTitulo(left);
         font-weight:bold;
         font-size: 1.2rem;
         }
@@ -1390,7 +1391,7 @@
         .btn{
         color:white;
         background-color:$color-secondary;
-        @include fuenteYMayusculaTitulo;
+        @include fuenteYMayusculaTitulo(left);
         font-weight: bold;
         text-decoration: none;
         border:none;
@@ -1408,6 +1409,7 @@
         }
         .card-title{
         font-family: 'Lora', serif; 
+        font-size: 1.5rem;
         }
         .card-text{
         font-family:'Roboto', sans-serif;
